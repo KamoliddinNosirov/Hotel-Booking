@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+footer .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #6B7280;
+}
+footer .container .main_div {
+  width: 350px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+footer .container .main_div p {
+  font-size: 15px;
+}
+footer .container .main_div .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+footer .container .main_div .icons .icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .container .main_div .icons .icon:hover {
+  transform: translateY(-8px);
+}
+footer .container .links {
+  width: 500px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+footer .container .links ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+footer .container .links ul span {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+footer .container .links ul a {
+  font-size: 15px;
+  color: #6B7280;
+}
+footer .container .email {
+  width: 300px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+footer .container .email span {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .container .email .email_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6B7280;
+  border-radius: 5px;
+  width: 280px;
+}
+footer .container .email .email_div input {
+  width: 100%;
+  border: none;
+  padding: 8px 8px;
+  background-color: white;
+}
+footer .container .email .email_div button {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid #6B7280;
+  transition: all 0.3s ease;
+}
+footer .container .email .email_div button:hover {
+  background-color: transparent;
+  color: black;
+}
+footer .container .copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #6B7280;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(107, 114, 128, 0.4941176471);
+}
+footer .container .copyright .ptags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}/*# sourceMappingURL=Footer.css.map */

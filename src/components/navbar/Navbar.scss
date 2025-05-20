@@ -1,14 +1,12 @@
-header{
-    background-image: url(/public/imgs/herobg.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
 
 nav{
     width: 100%;
-    padding: 10px 0px;
+    padding: 20px 0px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    transition: all .5s ease;
+    z-index: 999;
     .container{
         width: 100%;
         display: flex;
@@ -38,6 +36,16 @@ nav{
             }
             a.active{
                 color: orange;
+            }
+            button{
+                width: auto;
+                padding: 6px 18px;
+                background-color: transparent;
+                border: 1px solid rgb(208, 202, 202);
+                color: rgb(208, 202, 202);
+                border-radius: 20px;
+                cursor: pointer;
+                display: none;
             }
         }
         .icons{
@@ -82,7 +90,7 @@ nav{
                 display: none;
             }
             .btn{
-                padding: 6px 20px;
+                padding: 6px 25px;
                 background-color: black;
                 color: white;
                 cursor: pointer;
@@ -92,6 +100,34 @@ nav{
                 &:hover{
                     color: black;
                     background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.nav.active{
+    background-color: rgba(227, 226, 226, 0.814);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    ul{
+        a{
+            color: black;
+            &::after{
+                background-color: black;
+            }
+        }
+    }
+    .icons{
+        .icon{
+            color: black;
+        }
+        .search{
+            border-color: black;
+            input{
+                color: black;
+                &::placeholder{
+                    color: rgba(0, 0, 0, 0.738);
                 }
             }
         }

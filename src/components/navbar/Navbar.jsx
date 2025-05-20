@@ -7,20 +7,41 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
 
     const [search, setSearch] = useState(false)
+    const [isScrolled, setIsScrolled] = React.useState(true)
+
+
+    React.useEffect(()=>{
+        const handleScroll = () => {
+            if(window.scrollY > 10){
+                setIsScrolled(false)
+            }else{
+                setIsScrolled(true)
+            }
+            
+        }
+        window.addEventListener("scroll", handleScroll)
+        return ()=> window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     return (
         <>
-        <header>
-            <nav>
+            <nav className={isScrolled ? "nav" : "nav active"}>
                 <div className="container">
                     <div className="logo">
-                        <img src="/public/imgs/logo.svg" alt="" />
+                        <img src={isScrolled ? "/public/imgs/logo.svg" : "/public/imgs/logo 2.svg"} alt="" />
                     </div>
                     <ul>
-                        <li><NavLink to={"/"}>Home</NavLink></li>
-                        <li><NavLink to={"/hotels"}>Hotels</NavLink></li>
+                        <li onClick={()=>[
+                            setIsScrolled(true),
+                        ]}><NavLink to={"/"}>Home</NavLink></li>
+                        <li onClick={()=>[
+                            setIsScrolled(false),
+                        ]}><NavLink to={"/hotels"}>Hotels</NavLink></li>
                         <li><a href="">Experiences</a></li>
-                        <li><NavLink to={"/about"}>About</NavLink></li>
+                        <li onClick={()=>[
+                            setIsScrolled(false),
+                        ]}><NavLink to={"/about"}>About</NavLink></li>
+                        <button>Dashboard</button>
                     </ul>
                     <div className="icons">
                         <div className={search ? "search active" : "search"}>
@@ -37,7 +58,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            </header>
         </>
     )
 }

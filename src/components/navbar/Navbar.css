@@ -1,0 +1,137 @@
+nav {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+nav .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container ul {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 45px;
+}
+nav .container ul a {
+  color: white;
+  position: relative;
+}
+nav .container ul a::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+nav .container ul a:hover::after {
+  width: 100%;
+}
+nav .container ul a.active {
+  color: orange;
+}
+nav .container ul button {
+  width: auto;
+  padding: 6px 18px;
+  background-color: transparent;
+  border: 1px solid rgb(208, 202, 202);
+  color: rgb(208, 202, 202);
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+}
+nav .container .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+nav .container .icons .search {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 10px 5px 10px;
+  width: 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+nav .container .icons .search input {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.979);
+}
+nav .container .icons .search input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.333);
+}
+nav .container .icons .search input::placeholder {
+  color: rgba(255, 255, 255, 0.333);
+}
+nav .container .icons .search.active {
+  opacity: 1;
+  width: 200px;
+}
+nav .container .icons .icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .container .icons .icon:hover {
+  transform: translateY(-5px);
+}
+nav .container .icons .icon.search_icon {
+  display: none;
+}
+nav .container .icons .btn {
+  padding: 6px 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+nav .container .icons .btn:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.nav.active {
+  background-color: rgba(227, 226, 226, 0.814);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.nav.active ul a {
+  color: black;
+}
+.nav.active ul a::after {
+  background-color: black;
+}
+.nav.active .icons .icon {
+  color: black;
+}
+.nav.active .icons .search {
+  border-color: black;
+}
+.nav.active .icons .search input {
+  color: black;
+}
+.nav.active .icons .search input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.738);
+}
+.nav.active .icons .search input::placeholder {
+  color: rgba(0, 0, 0, 0.738);
+}/*# sourceMappingURL=Navbar.css.map */
