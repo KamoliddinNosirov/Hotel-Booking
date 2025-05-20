@@ -1,0 +1,99 @@
+header{
+    background-image: url(/public/imgs/herobg.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    padding: 10px 0px;
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            gap: 45px;
+            a{
+                color: white;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 2px;
+                    background-color: white;
+                    bottom: -5px;
+                    left: 0;
+                    transition: all .5s ease;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+            a.active{
+                color: orange;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .search{
+                border: 1px solid rgb(255, 255, 255);
+                padding: 5px 10px 5px 10px;
+                width: 0px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                opacity: 0;
+                transition: all .5s ease;
+                input{
+                    border: none;
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.979);
+                    &::placeholder{
+                        color: rgba(255, 255, 255, 0.333);
+                    }
+                }
+            }
+            .search.active{
+                opacity: 1;
+                width: 200px;
+            }
+            .icon{
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+                transition: all .3s ease;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+            .icon.search_icon{
+                display: none;
+            }
+            .btn{
+                padding: 6px 20px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border: 2px solid black;
+                border-radius: 20px;
+                transition: all .3s ease;
+                &:hover{
+                    color: black;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
