@@ -1,7 +1,13 @@
 import React from 'react'
 import "./Home.scss"
 import { FiCalendar, FiDatabase, FiSearch } from 'react-icons/fi'
-import Card from '../../components/featured_card/card'
+import Card from '../../components/featured_card/Card'
+import { FaArrowRight, FaStar, FaStarAndCrescent } from 'react-icons/fa'
+import CardExclusive from '../../components/exclusive_offers/CardExclusive'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/pagination';
+
 
 const Home = () => {
   return (
@@ -50,7 +56,112 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className='exclusive_offers'>
+          <div className="container">
+            <div className="row">
+              <div className="row-child">
+                <h1>Exclusive Offers</h1>
+                <p>Take advantage of our limited-time offers and special packages to enhance your stay and create unforgettable memories.</p>
+              </div>
+              <button>View All Offers<FaArrowRight className='icon' /></button>
+            </div>
+            <div className="row">
+              {<CardExclusive />}
+            </div>
+          </div>
+        </section>
+        <section className='whatOurGuestsSay'>
+          <div className="container">
+            <h1>What Our Guests Say</h1>
+            <p>Discover why discerning travelers consistently choose QuickStay for their exclusive and luxurious accommodations around the world.</p>
+            <div className="row">
+              <Swiper
+                spaceBetween={20}
+                slidesPerView={3}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  750: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                  },
+                  1500: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                  },
+                }}
+                className="mySwiper"
+              >
+                  <SwiperSlide className='swiper_div'>
+                    <div className="img_container">
+                      <img src="/public/imgs/userimg.jpg" alt="" />
+                      <div className="user_info">
+                        <h3>Emma Rodriguez</h3>
+                        <p>Barcelona, Spain</p>
+                      </div>
+                    </div>
+                    <div className="stars">
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                    </div>
+                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                  </SwiperSlide>
+                  <SwiperSlide className='swiper_div'>
+                    <div className="img_container">
+                      <img src="/public/imgs/userimg.jpg" alt="" />
+                      <div className="user_info">
+                        <h3>Emma Rodriguez</h3>
+                        <p>Barcelona, Spain</p>
+                      </div>
+                    </div>
+                    <div className="stars">
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                    </div>
+                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                  </SwiperSlide>
+                  <SwiperSlide className='swiper_div'>
+                    <div className="img_container">
+                      <img src="/public/imgs/userimg.jpg" alt="" />
+                      <div className="user_info">
+                        <h3>Emma Rodriguez</h3>
+                        <p>Barcelona, Spain</p>
+                      </div>
+                    </div>
+                    <div className="stars">
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                      <FaStar className='star' />
+                    </div>
+                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                  </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </section>
       </main>
+      <script src="../../assets/swiper.js"></script>
     </>
   )
 }

@@ -9,7 +9,7 @@ import { useState } from 'react'
 import Modal_login from './components/modal_login/Modal_login'
 function App() {
 
-  const [modalOpen, setModalOpen] = useState(true)
+  const [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>

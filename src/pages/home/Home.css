@@ -158,6 +158,9 @@ header {
   font-size: 14px;
   border-radius: 20px;
 }
+.featured_hotels .container .block .card .best_seller.remov {
+  display: none;
+}
 .featured_hotels .container .block .card .new {
   position: absolute !important;
   top: 10px;
@@ -197,15 +200,17 @@ header {
 .featured_hotels .container .block .card .info .name span .icon {
   color: #F8701B;
 }
-.featured_hotels .container .block .card .info p {
+.featured_hotels .container .block .card .info .location {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 2px;
   color: #252525;
   font-size: 14px;
+  padding: 5px 0px;
 }
-.featured_hotels .container .block .card .info p .icon {
+.featured_hotels .container .block .card .info .location .icon {
   font-size: 16px;
 }
 .featured_hotels .container .block .card .info .bolim {
@@ -243,4 +248,47 @@ header {
 }
 .featured_hotels .container .block .btn:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.exclusive_offers {
+  width: 100%;
+  padding: 100px;
+}
+.exclusive_offers .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.exclusive_offers .container .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exclusive_offers .container .row .row-child {
+  width: 600px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.exclusive_offers .container .row .row-child h1 {
+  font-size: 40px;
+  color: #252525;
+}
+.exclusive_offers .container .row .row-child p {
+  color: rgba(107, 114, 128, 0.8980392157);
+}
+.exclusive_offers .container .row button {
+  padding: 12px 25px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
 }/*# sourceMappingURL=Home.css.map */
