@@ -4,7 +4,7 @@ import { IoIosSearch } from 'react-icons/io'
 import { FiUser } from 'react-icons/fi'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({setModalOpen}) => {
 
     const [search, setSearch] = useState(false)
     const [isScrolled, setIsScrolled] = React.useState(true)
@@ -54,7 +54,9 @@ const Navbar = () => {
                             setSearch(!search)
                         }} />
                         <FiUser className='icon' />
-                        <button className='btn'>Login</button>
+                        <button onClick={()=>{
+                            setModalOpen(true)
+                        }} className='btn'>Login</button>
                     </div>
                 </div>
             </nav>

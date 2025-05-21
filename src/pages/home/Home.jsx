@@ -1,8 +1,6 @@
 import React from 'react'
 import "./Home.scss"
 import { FiCalendar, FiDatabase, FiSearch } from 'react-icons/fi'
-import { IoLocationOutline } from 'react-icons/io5'
-import { FaStar } from 'react-icons/fa'
 import Card from '../../components/featured_card/card'
 
 const Home = () => {
