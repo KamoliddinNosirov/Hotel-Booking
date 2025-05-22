@@ -1,0 +1,85 @@
+.mySwiper {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto !important;
+    padding: 20px 0px !important;
+    .swiper_div {
+        background: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 400px !important;
+        margin: 0px !important;
+        scale: 0.8;
+        opacity: 0.5;
+        transition: all .3s ease;
+        cursor: grab;
+        .img_container {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 10px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+
+            .user_info {
+                h3 {
+                    font-size: 1.2em;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 13px;
+                    padding: 0px;
+                    margin: 0px;
+                    color: #666;
+                    width: 100%;
+                }
+            }
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+
+            .star {
+                color: #F8701B;
+            }
+        }
+
+        p {
+            text-align: start;
+            width: 100%;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+
+
+    }
+
+    .swiper-slide-active {
+        scale: 1;
+        opacity: 1;
+    }
+
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next{
+        display: none;
+    }
+
+}

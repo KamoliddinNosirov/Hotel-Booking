@@ -39,7 +39,7 @@ const Navbar = ({setModalOpen, isScrolled, setIsScrolled}) => {
                         <IoIosSearch className={search ? 'icon search_icon' : 'icon'} onClick={()=>{
                             setSearch(!search)
                         }} />
-                        <FiUser className='icon' />
+                        <FiUser className='icon' style={{display: 'none'}} />
                         <button onClick={()=>{
                             setModalOpen(true)
                         }} className='btn'>Login</button>

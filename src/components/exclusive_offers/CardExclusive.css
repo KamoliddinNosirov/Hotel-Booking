@@ -1,0 +1,57 @@
+.card {
+  width: 370px;
+  height: 240px;
+  background-image: url(/public/imgs/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.card .discount {
+  padding: 5px 15px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.card .info {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.card .info h1 {
+  font-size: 28px;
+}
+.card .info p {
+  font-size: 14.5px;
+  width: 100%;
+}
+.card .info span {
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 12px;
+}
+.card button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.card:nth-child(2) {
+  background-image: url(/public/imgs/img2.jpg);
+}
+
+.card:nth-child(3) {
+  background-image: url(/public/imgs/img3.jpg);
+}/*# sourceMappingURL=CardExclusive.css.map */
