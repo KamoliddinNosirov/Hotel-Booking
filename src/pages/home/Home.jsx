@@ -9,7 +9,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 
 
-const Home = () => {
+const Home = ({setIsScrolled, isScrolled}) => {
+
+  React.useEffect(()=>{
+    const handleScroll = () => {
+        if(window.scrollY > 10){
+            setIsScrolled(false)
+        }else{
+            setIsScrolled(true)
+        }
+        
+    }
+    window.addEventListener("scroll", handleScroll)
+    return ()=> window.removeEventListener("scroll", handleScroll)
+}, [])
+
   return (
     <>
       <header>
@@ -105,59 +119,70 @@ const Home = () => {
                 }}
                 className="mySwiper"
               >
-                  <SwiperSlide className='swiper_div'>
-                    <div className="img_container">
-                      <img src="/public/imgs/userimg.jpg" alt="" />
-                      <div className="user_info">
-                        <h3>Emma Rodriguez</h3>
-                        <p>Barcelona, Spain</p>
-                      </div>
+                <SwiperSlide className='swiper_div'>
+                  <div className="img_container">
+                    <img src="/public/imgs/userimg.jpg" alt="" />
+                    <div className="user_info">
+                      <h3>Emma Rodriguez</h3>
+                      <p>Barcelona, Spain</p>
                     </div>
-                    <div className="stars">
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
+                  </div>
+                  <div className="stars">
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                  </div>
+                  <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                </SwiperSlide>
+                <SwiperSlide className='swiper_div'>
+                  <div className="img_container">
+                    <img src="/public/imgs/userimg.jpg" alt="" />
+                    <div className="user_info">
+                      <h3>Emma Rodriguez</h3>
+                      <p>Barcelona, Spain</p>
                     </div>
-                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
-                  </SwiperSlide>
-                  <SwiperSlide className='swiper_div'>
-                    <div className="img_container">
-                      <img src="/public/imgs/userimg.jpg" alt="" />
-                      <div className="user_info">
-                        <h3>Emma Rodriguez</h3>
-                        <p>Barcelona, Spain</p>
-                      </div>
+                  </div>
+                  <div className="stars">
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                  </div>
+                  <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                </SwiperSlide>
+                <SwiperSlide className='swiper_div'>
+                  <div className="img_container">
+                    <img src="/public/imgs/userimg.jpg" alt="" />
+                    <div className="user_info">
+                      <h3>Emma Rodriguez</h3>
+                      <p>Barcelona, Spain</p>
                     </div>
-                    <div className="stars">
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                    </div>
-                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
-                  </SwiperSlide>
-                  <SwiperSlide className='swiper_div'>
-                    <div className="img_container">
-                      <img src="/public/imgs/userimg.jpg" alt="" />
-                      <div className="user_info">
-                        <h3>Emma Rodriguez</h3>
-                        <p>Barcelona, Spain</p>
-                      </div>
-                    </div>
-                    <div className="stars">
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                      <FaStar className='star' />
-                    </div>
-                    <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
-                  </SwiperSlide>
+                  </div>
+                  <div className="stars">
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                    <FaStar className='star' />
+                  </div>
+                  <p>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay  provides."</p>
+                </SwiperSlide>
               </Swiper>
             </div>
+          </div>
+        </section>
+        <section className='stayInspierd'>
+          <div className="container">
+            <h1>Stay Inspired</h1>
+            <p>Join our newsletter and be the first to discover new destinations, exclusive offers, and travel inspiration.</p>
+            <div className="input_div">
+              <input type="text" placeholder='Enter your email' />
+              <button>Subscribe <FaArrowRight /></button>
+            </div>
+            <span>By subscribing, you agree to our Privacy Policy and consent to receive updates.</span>
           </div>
         </section>
       </main>

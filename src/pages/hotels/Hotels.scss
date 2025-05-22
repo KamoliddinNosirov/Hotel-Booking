@@ -1,0 +1,131 @@
+.maintag {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 80px;
+
+    .col {
+        width: 65%;
+
+        .hotelRooms {
+            width: 100%;
+            padding: 60px 0px 100px 0px;
+            .container {
+                width: 88%;
+                margin-right: 0;
+                h1 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #252525;
+                }
+
+                .hotel_info {
+                    margin: 10px 0px 50px 0px;
+                    color: #6B7280E5;
+                    width: 90%;
+                }
+
+                .cards {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    width: 100%;
+                    .cardChild {
+                        width: 100%;
+                        display: flex;
+                        align-items: start;
+                        border-radius: 10px;
+                        gap: 30px;
+                        overflow: hidden;
+                        .img_container {
+                            width: 530px;
+                            height: 280px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .info {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            flex-direction: column;
+                            row-gap: 15px;
+
+                            h4 {
+                                color: #838383;
+                            }
+
+                            h1 {
+                                color: #343434;
+                                font-size: 30px;
+                            }
+
+                            .icons {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 5px;
+                                .star {
+                                    color: #F8701B;
+                                    font-size: 18px;
+                                }
+
+                                p {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .location {
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                gap: 5px;
+                                width: 100%;
+                            }
+                            .boxs{
+                                display: flex;
+                                align-items: start;
+                                justify-content: start;
+                                gap: 20px;
+                                flex-wrap: wrap;
+                                .box{
+                                    width: 150px;
+                                    border-radius: 20px;
+                                    background-color: #f0f0f795;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 5px;
+                                    padding: 10px;
+                                }
+                            }
+                            .price{
+                                color: black;
+                                font-size: 20px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    .line{
+                        width: 100%;
+                        border-bottom: 1px solid #6B72804D;
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .col:nth-child(2) {
+        width: 35%;
+        border-color: green;
+    }
+}

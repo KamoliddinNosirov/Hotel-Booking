@@ -467,3 +467,59 @@ header {
     }
 
 }
+
+.stayInspierd{
+    width: 100%;
+    padding: 100px 0px;
+    .container{
+        background-color: #111827;
+        border-radius: 20px;
+        padding: 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        color: white;
+        h1{
+            font-size: 45px;
+            font-weight: 500;
+        }
+        p{
+            width: 55%;
+            text-align: center;
+            color: #FFFFFFB2;
+            font-size: 15px;
+        }
+        .input_div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            input{
+                width: 250px;
+                border: 1px solid #FFFFFF33;
+                background-color: #FFFFFF1A;
+                padding: 8px 0px 8px 10px;
+                color: #FFFFFFB2;
+                border-radius: 8px;
+            }
+            button{
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                background-color: #000000;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        span{
+            font-size: 13px;
+            color: #FFFFFF80;
+        }
+    }
+}
