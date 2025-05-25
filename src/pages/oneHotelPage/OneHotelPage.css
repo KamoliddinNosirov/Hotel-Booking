@@ -1,0 +1,221 @@
+.Urbanza_Suites {
+  width: 100%;
+  padding: 150px 0px 50px 0px;
+}
+.Urbanza_Suites .container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.Urbanza_Suites .container .h1_tag {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.Urbanza_Suites .container .h1_tag h1 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #252525;
+}
+.Urbanza_Suites .container .h1_tag p {
+  font-size: 12px;
+  color: #252525;
+  margin-bottom: -8px;
+}
+.Urbanza_Suites .container .h1_tag .discount {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #F8701B;
+  color: white;
+  font-size: 12px;
+}
+.Urbanza_Suites .container .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Urbanza_Suites .container .stars .star {
+  color: #F8701B;
+  font-size: 18px;
+}
+.Urbanza_Suites .container .stars p {
+  margin-left: 10px;
+}
+.Urbanza_Suites .container .location {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  width: 100%;
+  color: rgba(107, 114, 128, 0.8901960784);
+  margin-top: 5px;
+}
+.Urbanza_Suites .container .img_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  margin: 20px 0px;
+  gap: 30px;
+}
+.Urbanza_Suites .container .img_container .main_img {
+  width: 660px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Urbanza_Suites .container .img_container .main_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Urbanza_Suites .container .img_container .select_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  gap: 15px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+.Urbanza_Suites .container .img_container .select_imgs .select_img {
+  width: 270px;
+  height: 185px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+.Urbanza_Suites .container .img_container .select_imgs .select_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Urbanza_Suites .container .img_container .select_imgs .select_img.active {
+  border: 2px solid #ff680a;
+}
+.Urbanza_Suites .container .hotel_informatsiya {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.Urbanza_Suites .container .hotel_informatsiya .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.Urbanza_Suites .container .hotel_informatsiya .tags .title {
+  font-size: 34px;
+}
+.Urbanza_Suites .container .hotel_informatsiya .tags .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Urbanza_Suites .container .hotel_informatsiya .boxs {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.Urbanza_Suites .container .hotel_informatsiya .boxs .box {
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgba(240, 240, 247, 0.5843137255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+.Urbanza_Suites .container .block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: black;
+  gap: 15px;
+  margin: 50px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Urbanza_Suites .container .block .bolim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.Urbanza_Suites .container .block .bolim .line {
+  height: 60px;
+  width: 2px;
+  border-left: 2px solid rgba(107, 114, 128, 0.6117647059);
+}
+.Urbanza_Suites .container .block .destination {
+  width: 180px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.Urbanza_Suites .container .block .destination p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+  gap: 5px;
+  color: gray;
+  font-weight: 600;
+}
+.Urbanza_Suites .container .block .destination p .icon {
+  font-size: 18px;
+  color: gray;
+}
+.Urbanza_Suites .container .block .destination input {
+  padding: 14px 18px;
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 5px;
+}
+.Urbanza_Suites .container .block .checkin,
+.Urbanza_Suites .container .block .checkout {
+  width: auto;
+}
+.Urbanza_Suites .container .block .guest {
+  width: 80px;
+}
+.Urbanza_Suites .container .block .guest input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px;
+}
+.Urbanza_Suites .container .block button {
+  width: 280px;
+  height: 100%;
+  padding: 18px 30px;
+  background-color: #2563EB;
+  border: 1px solid #2563EB;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+}/*# sourceMappingURL=OneHotelPage.css.map */

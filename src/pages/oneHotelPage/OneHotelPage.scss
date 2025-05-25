@@ -1,0 +1,229 @@
+.Urbanza_Suites {
+    width: 100%;
+    padding: 150px 0px 50px 0px;
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 10px;
+        .h1_tag{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            h1{
+                font-size: 38px;
+                font-weight: 500;
+                color: #252525;
+            }
+            p{
+                font-size: 12px;
+                color: #252525;
+                margin-bottom: -8px;
+            }
+            .discount{
+                padding: 6px 12px;
+                border-radius: 20px;
+                background-color: #F8701B;
+                color: white;
+                font-size: 12px;
+            }
+        }
+        .stars {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            .star {
+                color: #F8701B;
+                font-size: 18px;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 5px;
+            width: 100%;
+            color: #6B7280E3;
+            margin-top: 5px;
+        }
+        .img_container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between !important;
+            // gap: 80px;
+            margin: 20px 0px;
+            gap: 30px;
+            .main_img{
+                width: 660px;
+                height: 380px;
+                border-radius: 20px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .select_imgs{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 600px;
+                gap: 15px;
+                row-gap: 15px;
+                flex-wrap: wrap;
+                .select_img{
+                    width: 270px;
+                    height: 185px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    border: 2px solid transparent;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .select_img.active{
+                    border: 2px solid #ff680a;
+                }
+            }
+        }
+        .hotel_informatsiya{
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 15px;
+            .tags{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between !important;
+                .title{
+                    font-size: 34px;
+                }
+                .price{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+            .boxs {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 20px;
+                flex-wrap: wrap;
+
+                .box {
+                    width: 150px;
+                    border-radius: 20px;
+                    background-color: #f0f0f795;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    padding: 10px;
+                }
+            }
+        }
+        .block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: black;
+            gap: 15px;
+            margin: 50px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .bolim{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                .line{
+                    height: 60px;
+                    width: 2px;
+                    border-left: 2px solid #6b72809c;
+                }
+            }
+            .destination {
+                width: 180px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 10px;
+                p {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    font-size: 16px;
+                    gap: 5px;
+                    color: gray;
+                    font-weight: 600;
+
+                    .icon {
+                        font-size: 18px;
+                        color: gray;
+                    }
+                }
+
+                input {
+                    padding: 14px 18px;
+                    border: 1px solid gray;
+                    color: gray;
+                    border-radius: 5px;
+                }
+            }
+
+            .checkin,
+            .checkout {
+                width: auto;
+            }
+
+            .guest {
+                width: 80px;
+                input {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 14px 10px;
+                }
+            }
+
+            button {
+                width: 280px;
+                height: 100%;
+                padding: 18px 30px;
+                background-color: #2563EB;
+                border: 1px solid #2563EB;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+}

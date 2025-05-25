@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home setIsScrolled={setIsScrolled} isScrolled={isScrolled} />} />
           <Route path='/hotels' element={<Hotels />} />
-          <Route path='/' element={<OneHotelPage />} />
+          <Route path='/onehotelpage' element={<OneHotelPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

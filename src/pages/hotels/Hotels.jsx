@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Hotels.scss"
 import { FaRegStar, FaStar, FaSwimmingPool } from 'react-icons/fa'
 import { IoLocationOutline } from 'react-icons/io5'
@@ -7,6 +7,14 @@ import { PiCallBell, PiCoffeeLight } from 'react-icons/pi'
 import { MdOutlineWifi } from 'react-icons/md'
 
 const Hotels = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
   return (
     <>
       <main className='maintag'>

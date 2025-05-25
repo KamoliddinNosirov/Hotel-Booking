@@ -7,7 +7,7 @@ import CardExclusive from '../../components/exclusive_offers/CardExclusive'
 import SwiperSlider from '../../components/swiper/SwiperSlider'
 
 
-const Home = ({ setIsScrolled, isScrolled }) => {
+const Home = ({ setIsScrolled}) => {
 
   React.useEffect(() => {
     window.scrollTo({
@@ -20,7 +20,6 @@ const Home = ({ setIsScrolled, isScrolled }) => {
       } else {
         setIsScrolled(true)
       }
-
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
