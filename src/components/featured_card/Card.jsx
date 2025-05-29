@@ -1,13 +1,21 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import { IoLocationOutline } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom'
+import OneHotelPage from '../../pages/oneHotelPage/OneHotelPage'
 
 const Card = () => {
+
+
+    const navigate = useNavigate()
+
     return (
         <>
             <div className="card-featured">
                 <span className='best_seller'>Best Seller</span>
-                <img src="/public/imgs/yotoqxona1.png" alt="" />
+                <img onClick={() => {
+                    navigate('/onehotelpage')
+                }} src="/public/imgs/yotoqxona1.png" alt="" />
                 <div className="info">
                     <div className="name">
                         <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
@@ -20,7 +28,9 @@ const Card = () => {
             </div>
             <div className="card-featured">
                 <span className='best_seller remov'>Best Seller</span>
-                <img src="/public/imgs/yotoqxona4.png" alt="" />
+                <img onClick={()=>{
+                    navigate('/onehotelpage')
+                }} src="/public/imgs/yotoqxona4.png" alt="" />
                 <div className="info">
                     <div className="name">
                         <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
@@ -33,7 +43,9 @@ const Card = () => {
             </div>
             <div className="card-featured">
                 <span className='best_seller remov'>Best Seller</span>
-                <img src="/public/imgs/yotoqxona2.png" alt="" />
+                <img onClick={()=>{
+                    navigate('/onehotelpage')
+                }} src="/public/imgs/yotoqxona2.png" alt="" />
                 <div className="info">
                     <div className="name">
                         <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
@@ -46,7 +58,9 @@ const Card = () => {
             </div>
             <div className="card-featured">
                 <span className='new'>New</span>
-                <img src="/public/imgs/yotoqxona3.png" alt="" />
+                <img onClick={()=>{
+                    navigate('/onehotelpage')
+                }} src="/public/imgs/yotoqxona3.png" alt="" />
                 <div className="info">
                     <div className="name">
                         <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>

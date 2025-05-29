@@ -173,6 +173,7 @@ header {
 .featured_hotels .container .block .card-featured img {
   width: 100%;
   height: 180px;
+  cursor: pointer;
 }
 .featured_hotels .container .block .card-featured .info {
   width: 100%;

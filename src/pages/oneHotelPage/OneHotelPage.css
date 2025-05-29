@@ -95,6 +95,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 .Urbanza_Suites .container .img_container .select_imgs .select_img.active {
   border: 2px solid #ff680a;
@@ -218,4 +219,53 @@
   justify-content: center;
   gap: 5px;
   font-size: 16px;
+}
+.Urbanza_Suites .container .information_hotel {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  row-gap: 50px;
+}
+.Urbanza_Suites .container .information_hotel .boxs {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.Urbanza_Suites .container .information_hotel .boxs .box {
+  width: 400px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+}
+.Urbanza_Suites .container .information_hotel .boxs .box .box_info {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.Urbanza_Suites .container .information_hotel .boxs .box .box_info h3 {
+  font-size: 19px;
+  color: #454545;
+}
+.Urbanza_Suites .container .information_hotel .boxs .box .box_info p {
+  font-size: 14px;
+  color: #6B7280;
+}
+.Urbanza_Suites .container .information_hotel .boxs .box .icon {
+  font-size: 25px;
+  color: #454545;
+}
+.Urbanza_Suites .container .information_hotel .info__ {
+  width: 50%;
+}
+.Urbanza_Suites .container .information_hotel .info__ p {
+  width: 100%;
+  color: #454545;
+  font-size: 15px;
+  color: #6B7280;
 }/*# sourceMappingURL=OneHotelPage.css.map */
