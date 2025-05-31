@@ -158,7 +158,7 @@ header {
   font-size: 14px;
   border-radius: 20px;
 }
-.featured_hotels .container .block .card-featured .best_seller.remov {
+.featured_hotels .container .block .card-featured .best_seller.hidden {
   display: none;
 }
 .featured_hotels .container .block .card-featured .new {
@@ -189,7 +189,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
 }
 .featured_hotels .container .block .card-featured .info .name h3 {
   color: #252525;

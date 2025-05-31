@@ -158,7 +158,7 @@
                 justify-content: center;
                 gap: 40px;
                 .line{
-                    height: 60px;
+                    height: 65px;
                     width: 2px;
                     border-left: 2px solid #6b72809c;
                 }
@@ -229,10 +229,15 @@
         .information_hotel{
             display: flex;
             align-items: start;
-            justify-content: space-between;
+            justify-content: start;
             width: 100%;
-            // flex-direction: column;
+            flex-direction: column;
             row-gap: 50px;
+            .liner{
+                width: 100%;
+                height: 1px;
+                background-color: #6b72809c;
+            }
             .boxs{
                 display: flex;
                 align-items: start;
@@ -267,11 +272,31 @@
                 }
             }
             .info__{
-                width: 50%;
+                width: 100%;
                 p{
                     width: 100%;
                     color: #454545;
                     font-size: 15px;
+                    color: #6B7280;
+                }
+            }
+            .location_hotel{
+                display: flex;
+                align-self: start;
+                justify-content: start;
+                flex-direction: column;
+                row-gap: 20px;
+                width: 100%;
+                h2{
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+                iframe{
+                    border: none;
+                    border-radius: 10px;
+                }
+                p{
+                    margin-top: -10px;
                     color: #6B7280;
                 }
             }

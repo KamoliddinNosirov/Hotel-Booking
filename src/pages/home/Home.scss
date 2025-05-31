@@ -174,7 +174,7 @@ header {
                     border-radius: 20px;
                 }
 
-                .best_seller.remov {
+                .best_seller.hidden {
                     display: none;
                 }
 
@@ -208,10 +208,9 @@ header {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        gap: 50px;
-
                         h3 {
                             color: #252525;
+
                         }
 
                         span {

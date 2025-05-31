@@ -3,9 +3,11 @@ import "./Modal_login.scss"
 import { FcGoogle } from 'react-icons/fc'
 import { IoCloseCircleOutline, IoLogoApple } from 'react-icons/io5'
 
-const Modal_login = ({modalOpen, setModalOpen }) => {
+const Modal_login = ({ modalOpen, setModalOpen }) => {
     return (
-        <div className={modalOpen ? 'modal active' : 'modal'}>
+        <div onClick={() => {
+            setModalOpen(false)
+        }} className={modalOpen ? 'modal active' : 'modal'}>
             <div className="content">
                 <span onClick={() => {
                     setModalOpen(false)

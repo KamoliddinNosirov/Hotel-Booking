@@ -4,70 +4,30 @@ import { IoLocationOutline } from 'react-icons/io5'
 import { useNavigate } from 'react-router-dom'
 import OneHotelPage from '../../pages/oneHotelPage/OneHotelPage'
 
-const Card = () => {
+const Card = ({ item }) => {
 
 
     const navigate = useNavigate()
 
+
     return (
         <>
             <div className="card-featured">
-                <span className='best_seller'>Best Seller</span>
+                <span className={item.new || item.bestseller ? 'best_seller' : 'best_seller hidden'}>{
+                    item.new ? 'New' : item.bestseller ? 'Best Seller' : ''
+                    }</span>
                 <img onClick={() => {
                     navigate('/onehotelpage')
-                }} src="/public/imgs/yotoqxona1.png" alt="" />
+                }} src={item.image} alt="" />
                 <div className="info">
                     <div className="name">
-                        <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
-                    <p className='location'><IoLocationOutline className='icon' />Main Road 123 Street , 23 Colony</p>
+                        <h3>{item.name.slice(0, 25)}</h3><span><FaStar className='icon' />{item.rating}</span></div>
+                    <p className='location'><IoLocationOutline className='icon' />{item.location.slice(0, 37)}</p>
                     <div className="bolim">
-                        <h2>$450 <span>/ night</span></h2>
-                        <button>Book now</button>
-                    </div>
-                </div>
-            </div>
-            <div className="card-featured">
-                <span className='best_seller remov'>Best Seller</span>
-                <img onClick={()=>{
-                    navigate('/onehotelpage')
-                }} src="/public/imgs/yotoqxona4.png" alt="" />
-                <div className="info">
-                    <div className="name">
-                        <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
-                    <p className='location'><IoLocationOutline className='icon' /> Main Road 123 Street , 23 Colony</p>
-                    <div className="bolim">
-                        <h2>$450 <span>/ night</span></h2>
-                        <button>Book now</button>
-                    </div>
-                </div>
-            </div>
-            <div className="card-featured">
-                <span className='best_seller remov'>Best Seller</span>
-                <img onClick={()=>{
-                    navigate('/onehotelpage')
-                }} src="/public/imgs/yotoqxona2.png" alt="" />
-                <div className="info">
-                    <div className="name">
-                        <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
-                    <p className='location'><IoLocationOutline className='icon' /> Main Road 123 Street , 23 Colony</p>
-                    <div className="bolim">
-                        <h2>$450 <span>/ night</span></h2>
-                        <button>Book now</button>
-                    </div>
-                </div>
-            </div>
-            <div className="card-featured">
-                <span className='new'>New</span>
-                <img onClick={()=>{
-                    navigate('/onehotelpage')
-                }} src="/public/imgs/yotoqxona3.png" alt="" />
-                <div className="info">
-                    <div className="name">
-                        <h3>The Grand Resort</h3><span><FaStar className='icon' /> 4.3</span></div>
-                    <p className='location'><IoLocationOutline className='icon' /> Main Road 123 Street , 23 Colony</p>
-                    <div className="bolim">
-                        <h2>$450 <span>/ night</span></h2>
-                        <button>Book now</button>
+                        <h2>${item.price}<span>/ night</span></h2>
+                        <button onClick={() => {
+                            navigate('/onehotelpage')
+                        }}>Book now</button>
                     </div>
                 </div>
             </div>

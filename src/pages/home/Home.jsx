@@ -7,7 +7,7 @@ import CardExclusive from '../../components/exclusive_offers/CardExclusive'
 import SwiperSlider from '../../components/swiper/SwiperSlider'
 
 
-const Home = ({ setIsScrolled}) => {
+const Home = ({ setIsScrolled, card_info }) => {
 
   React.useEffect(() => {
     window.scrollTo({
@@ -61,7 +61,13 @@ const Home = ({ setIsScrolled}) => {
             <h1>Featured Hotels</h1>
             <p>Discover our handpicked selection of exceptional properties around the world, offering unparalleled luxury and unforgettable experiences</p>
             <div className="block">
-              {<Card />}
+              {
+                card_info.map((item, index) =>{
+                  return (
+                    <Card item={item} key={index}/>
+                  )
+                })
+              }
               <button className='btn'>View All Destinations</button>
             </div>
           </div>
@@ -85,7 +91,7 @@ const Home = ({ setIsScrolled}) => {
             <h1>What Our Guests Say</h1>
             <p>Discover why discerning travelers consistently choose QuickStay for their exclusive and luxurious accommodations around the world.</p>
             <div className="row">
-             <SwiperSlider />
+              <SwiperSlider />
             </div>
           </div>
         </section>

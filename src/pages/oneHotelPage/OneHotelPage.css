@@ -159,7 +159,7 @@
   gap: 40px;
 }
 .Urbanza_Suites .container .block .bolim .line {
-  height: 60px;
+  height: 65px;
   width: 2px;
   border-left: 2px solid rgba(107, 114, 128, 0.6117647059);
 }
@@ -223,9 +223,15 @@
 .Urbanza_Suites .container .information_hotel {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
+  flex-direction: column;
   row-gap: 50px;
+}
+.Urbanza_Suites .container .information_hotel .liner {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(107, 114, 128, 0.6117647059);
 }
 .Urbanza_Suites .container .information_hotel .boxs {
   display: flex;
@@ -261,11 +267,31 @@
   color: #454545;
 }
 .Urbanza_Suites .container .information_hotel .info__ {
-  width: 50%;
+  width: 100%;
 }
 .Urbanza_Suites .container .information_hotel .info__ p {
   width: 100%;
   color: #454545;
   font-size: 15px;
+  color: #6B7280;
+}
+.Urbanza_Suites .container .information_hotel .location_hotel {
+  display: flex;
+  align-self: start;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}
+.Urbanza_Suites .container .information_hotel .location_hotel h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.Urbanza_Suites .container .information_hotel .location_hotel iframe {
+  border: none;
+  border-radius: 10px;
+}
+.Urbanza_Suites .container .information_hotel .location_hotel p {
+  margin-top: -10px;
   color: #6B7280;
 }/*# sourceMappingURL=OneHotelPage.css.map */

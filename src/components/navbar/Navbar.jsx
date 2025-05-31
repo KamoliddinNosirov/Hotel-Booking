@@ -13,8 +13,11 @@ const Navbar = ({ setModalOpen, isScrolled, setIsScrolled }) => {
         <>
             <nav className={isScrolled ? "nav" : "nav active"}>
                 <div className="container">
-                    <div className="logo">
-                        <img src={isScrolled ? "/public/imgs/logo.svg" : "/public/imgs/logo 2.svg"} alt="" />
+                    <div onClick={()=>{
+                        setIsScrolled(true)
+                    }} className="logo">
+                        <NavLink to={"/"}> <img src={isScrolled ? "/public/imgs/logo.svg" : "/public/imgs/logo 2.svg"} alt="" />
+                        </NavLink>
                     </div>
                     <ul>
                         <li onClick={() => {
@@ -25,10 +28,10 @@ const Navbar = ({ setModalOpen, isScrolled, setIsScrolled }) => {
                         }}><NavLink to={"/hotels"}>Hotels</NavLink></li>
                         <li onClick={() => {
                             setIsScrolled(false)
-                        }}><NavLink to={"/onehotelpage"}>Experiences</NavLink></li>
+                        }}><a href="/">Experience</a></li>
                         <li onClick={() => {
                             setIsScrolled('false')
-                        }}><NavLink to={"/about"}>About</NavLink></li>
+                        }}><a href="/">About</a></li>
                         <button>Dashboard</button>
                     </ul>
                     <div className="icons">
